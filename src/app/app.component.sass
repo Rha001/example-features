@@ -1,0 +1,24 @@
+@import 'global-vars.sass';
+.container
+    white-space: nowrap; /*Prevents Wrapping*/
+    height: 130px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+.container::-webkit-scrollbar 
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+    display: none;
+/*.container::-webkit-scrollbar-thumb 
+    background: #FF0000;*/
+
+.slide
+    display: inline-block; /*Display inline and maintain block characteristics.*/
+    vertical-align: top; /*Makes sure all the divs are correctly aligned.*/
+    white-space: normal; /*Prevents child elements from inheriting nowrap.*/
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 5px;
+.group
+    box-shadow: 10px 10px red
